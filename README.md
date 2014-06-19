@@ -2,7 +2,7 @@
 
 pry-suite is designed to set up a nice Pry ecosystem out of the box. With pry-suite, you are given Pry with access to a suite of great plugins. Currently, the following plugins will get installed along with Pry:
 
- * [pry-byebug][pry-byebug] (Integration with the byebug Ruby debugger)
+ * [pry-byebug][pry-byebug] (Integration with the Ruby 2 debugger, [byebug][byebug])
    * On Ruby 1.9.x, this is replaced with [pry-debugger][pry-debugger]
  * [pry-doc][pry-doc] (allows you to look into the Ruby builtin classes with the ? and $ commands)
  * [pry-docmore][pry-docmore] (extends pry-doc for dollar-variables and keywords)
@@ -12,6 +12,8 @@ pry-suite is designed to set up a nice Pry ecosystem out of the box. With pry-su
  * [pry-pretty-numeric][pry-pretty-numeric] (reformats large numbers, e.g. 1234567890 to 1_234_567_890)
  * [pry-rescue][pry-rescue] (provides `Pry.rescue { ... }` blocks to capture any exceptions and start a Pry session)
  * [pry-stack_explorer][pry-stack_explorer] (allows you to navigate the call stack)
+
+Finally, the [gist][gist] gem also gets installed to enable Pry's `gist` command.
 
 ## Installation
 
@@ -42,6 +44,8 @@ $ gem install pry-suite
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
+[byebug]: https://github.com/deivid-rodriguez/byebug
+[gist]: https://github.com/defunkt/gist
 [pry-byebug]: https://github.com/deivid-rodriguez/pry-byebug
 [pry-debugger]: https://github.com/nixme/pry-debugger
 [pry-doc]: https://github.com/pry/pry-doc
