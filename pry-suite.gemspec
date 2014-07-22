@@ -27,6 +27,10 @@ Gem::Specification.new do |s|
 
   if RUBY_VERSION < '2.0'
     s.add_dependency 'pry-debugger'
+
+    # pry-stack_explorer is unfortunately not compatible with pry-byebug
+    # https://github.com/deivid-rodriguez/pry-byebug/pull/6
+    s.add_dependency 'pry-stack_explorer'
   else
     s.add_dependency 'pry-byebug'
   end
@@ -39,7 +43,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'pry-macro'
   s.add_dependency 'pry-pretty-numeric'
   s.add_dependency 'pry-rescue'
-  s.add_dependency 'pry-stack_explorer'
 
   # Enables pry's `gist` command
   s.add_dependency 'gist'
